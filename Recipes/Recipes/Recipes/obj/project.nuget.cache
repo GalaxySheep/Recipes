@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L9eEExayibHc5ZlNP2cSBgskEagP6SBLjvc6j5lP0tQSMm/bmPAh8RjRdFZqsLPV5fnu7H6AznnycL41GwZfpw==",
+  "dgSpecHash": "zmQPtvYIXPhYV1mEx6ILFffaz4tTWxgh4Lzmy0M5gzvg+lefs41GbLerSgkT9jrASnhMWpvg6T4OWPsIdolRcA==",
   "success": true,
   "projectFilePath": "C:\\Users\\MinyM\\Documents\\GitHub\\Recipes\\Recipes\\Recipes\\Recipes\\Recipes.csproj",
   "expectedPackageFiles": [
@@ -15,8 +15,8 @@
     "C:\\Users\\MinyM\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\MinyM\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\MinyM\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\MinyM\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\MinyM\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }
