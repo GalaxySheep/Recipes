@@ -1,17 +1,30 @@
 ﻿using System;
 using System.IO;
+using Recipes.Data;
 using Xamarin.Forms;
 
 namespace Recipes
 {
     public partial class App : Application
     {
-        public static string FolderPath { get; private set; }
+        static RecipeDatabase database;
+
+        // Create the database connection as a singleton.
+        public static RecipeDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new RecipeDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Recipes.db3"));
+                }
+                return database;
+            }
+        }
 
         public App()
         {
             InitializeComponent();
-            FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
             MainPage = new AppShell();
         }
 

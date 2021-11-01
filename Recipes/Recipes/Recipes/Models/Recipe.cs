@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SQLite;
+using System;
 
 namespace Recipes.Models
 {
-    class Recipe
+    public class Recipe
     {
-        public string Filename { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
         public string Text { get; set; }
         public DateTime Date { get; set; }
     }

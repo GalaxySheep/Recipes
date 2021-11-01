@@ -24,17 +24,13 @@ namespace Recipes.Views
             BindingContext = new Recipe();
         }
 
-        void LoadNote(string filename)
+        async void LoadNote(string itemId)
         {
             try
             {
+                int id = Convert.ToInt32(itemId);
                 // Retrieve the note and set it as the BindingContext of the page.
-                Recipe recipe = new Recipe
-                {
-                    Filename = filename,
-                    Text = File.ReadAllText(filename),
-                    Date = File.GetCreationTime(filename)
-                };
+                Recipe recipe = await App.Database.GetNoteAsync(id);
                 BindingContext = recipe;
             }
             catch (Exception)
@@ -46,17 +42,10 @@ namespace Recipes.Views
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             var recipe = (Recipe)BindingContext;
-
-            if (string.IsNullOrWhiteSpace(recipe.Filename))
+            recipe.Date = DateTime.UtcNow;
+            if (!string.IsNullOrWhiteSpace(recipe.Text))
             {
-                // Save the file.
-                var filename = Path.Combine(App.FolderPath, $"{Path.GetRandomFileName()}.recipes.txt");
-                File.WriteAllText(filename, recipe.Text);
-            }
-            else
-            {
-                // Update the file.
-                File.WriteAllText(recipe.Filename, recipe.Text);
+                await App.Database.SaveNoteAsync(recipe);
             }
 
             // Navigate backwards
@@ -65,13 +54,8 @@ namespace Recipes.Views
 
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
-            var recipe = (Recipe)BindingContext;
-
-            // Delete the file.
-            if (File.Exists(recipe.Filename))
-            {
-                File.Delete(recipe.Filename);
-            }
+            var note = (Recipe)BindingContext;
+            await App.Database.DeleteNoteAsync(note);
 
             // Navigate backwards
             await Shell.Current.GoToAsync("..");
