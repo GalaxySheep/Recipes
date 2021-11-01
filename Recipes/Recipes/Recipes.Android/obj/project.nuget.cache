@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4T5UXvJ6bCzIGU4FBgu8FwPMS4eJ6SDXO9r/E3A0Ge/dj5l17xW3vgGF5KWxHLSPrVOt2r8fu131ruyVJV37JQ==",
+  "dgSpecHash": "tOOvuKLmgIRAPAcndlf6wukHwGFA8n52VAynA5hxdb5PaedWd3TKIN7muQlvlSPlVzBEQaYKzCyTPRYggYHtug==",
   "success": true,
   "projectFilePath": "C:\\Users\\MinyM\\Documents\\GitHub\\Recipes\\Recipes\\Recipes\\Recipes.Android\\Recipes.Android.csproj",
   "expectedPackageFiles": [
@@ -63,6 +63,16 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.0 to 1.6.1. Reference the package directly from the project to select a different version. \r\n Recipes.Android -> Recipes -> Xamarin.Essentials (>= 1.7.0) \r\n Recipes.Android -> Xamarin.Essentials (>= 1.6.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
     {
       "code": "NU1605",
       "level": "Warning",

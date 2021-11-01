@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "n6NaS6vZRH0MPFrPruZM3zlloLoAZnVFceo65xbvqAJK+lv2ighE3LepPeorv1jg11cDsZpe390lDSDInk/4RQ==",
+  "dgSpecHash": "RZxu/6qal1KzbPVgwIbD1O9N1GVULu6M0SgekxsyDBVtNeFTOEPEN6ks6g5d+k1P1sffk7416YDSwHTpKYAqyw==",
   "success": true,
   "projectFilePath": "C:\\Users\\MinyM\\Documents\\GitHub\\Recipes\\Recipes\\Recipes\\Recipes.iOS\\Recipes.iOS.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,19 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.0 to 1.6.1. Reference the package directly from the project to select a different version. \r\n Recipes.iOS -> Recipes -> Xamarin.Essentials (>= 1.7.0) \r\n Recipes.iOS -> Xamarin.Essentials (>= 1.6.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
     {
       "code": "NU1605",
       "level": "Warning",
