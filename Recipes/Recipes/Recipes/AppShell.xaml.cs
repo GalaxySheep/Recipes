@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Recipes.Views;
+using Xamarin.Forms;
 
 namespace Recipes
 {
@@ -7,6 +8,7 @@ namespace Recipes
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute(nameof(RecipeEntryPage), typeof(RecipeEntryPage));
         }
 
     }
