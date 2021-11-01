@@ -42,7 +42,6 @@ namespace Recipes.Views
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             var recipe = (Recipe)BindingContext;
-            recipe.Date = DateTime.UtcNow;
             if (!string.IsNullOrWhiteSpace(recipe.Text))
             {
                 await App.Database.SaveNoteAsync(recipe);
@@ -54,8 +53,8 @@ namespace Recipes.Views
 
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
-            var note = (Recipe)BindingContext;
-            await App.Database.DeleteNoteAsync(note);
+            var recipe = (Recipe)BindingContext;
+            await App.Database.DeleteNoteAsync(recipe);
 
             // Navigate backwards
             await Shell.Current.GoToAsync("..");

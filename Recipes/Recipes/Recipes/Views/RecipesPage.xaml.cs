@@ -36,8 +36,8 @@ namespace Recipes.Views
             if (e.CurrentSelection != null)
             {
                 // Navigate to the NoteEntryPage, passing the ID as a query parameter.
-                Recipe note = (Recipe)e.CurrentSelection.FirstOrDefault();
-                await Shell.Current.GoToAsync($"{nameof(RecipeEntryPage)}?{nameof(RecipeEntryPage.ItemId)}={note.ID.ToString()}");
+                Recipe recipe = (Recipe)e.CurrentSelection.FirstOrDefault();
+                await Shell.Current.GoToAsync($"{nameof(RecipeEntryPage)}?{nameof(RecipeEntryPage.ItemId)}={recipe.ID.ToString()}");
             }
         }
     }

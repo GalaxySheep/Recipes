@@ -3,13 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Recipes.Views.RecipeEntryPage"
              Title="Recipe Entry">
+    <ContentPage.Resources>
+        <!-- Implicit styles -->
+        <Style TargetType="{x:Type Editor}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}" />
+        </Style>
+    </ContentPage.Resources>
+
     <!-- Layout children vertically -->
-    <StackLayout Margin="20">
-        <Editor Placeholder="Enter your recipe"
+    <StackLayout Margin="{StaticResource PageMargin}">
+        <Editor Placeholder="Enter recipe name"
                 Text="{Binding Text}"
-                HeightRequest="100" />
-        <!-- Layout children in two columns -->
+                HeightRequest="50"
+                FontSize="Title"/>
+        <Editor Placeholder="Enter recipe creator"
+                Text="{Binding Creator}"
+                HeightRequest="50" />
+        <Label Text="Ingredients"/>
+        <Editor Placeholder="Enter recipe ingredients"
+                Text="{Binding Ingredients}"
+                HeightRequest="150" />
+        <Label Text="Steps"/>
+        <Editor Placeholder="Enter recipe ingredients"
+                Text="{Binding Steps}"
+                HeightRequest="150" />
         <Grid ColumnDefinitions="*,*">
+            <!-- Layout children in two columns -->
             <Button Text="Save"
                     Clicked="OnSaveButtonClicked" />
             <Button Grid.Column="1"
