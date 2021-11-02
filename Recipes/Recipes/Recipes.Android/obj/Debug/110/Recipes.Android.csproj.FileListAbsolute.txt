@@ -637,3 +637,4 @@ C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes.Android\obj\Debu
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes.Android\obj\Debug\110\android\src\mono\com\google\android\material\navigation\NavigationBarView_OnItemReselectedListenerImplementor.java
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes.Android\obj\Debug\110\android\src\mono\com\google\android\material\navigation\NavigationBarView_OnItemSelectedListenerImplementor.java
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes.Android\obj\Debug\110\res\mipmap-hdpi\launcher_foreground.png
+C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes.Android\obj\Debug\110\Recipes.Android.csproj.CopyComplete

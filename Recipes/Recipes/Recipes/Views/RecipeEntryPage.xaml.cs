@@ -41,7 +41,7 @@ namespace Recipes.Views
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             var recipe = (Recipe)BindingContext;
-            if (!string.IsNullOrWhiteSpace(recipe.Text))
+            if (!string.IsNullOrWhiteSpace(recipe.Name))
             {
                 await App.Database.SaveRecipeAsync(recipe);
             }

@@ -27,8 +27,5 @@
         <ShellContent Title="Recipes"
                       Icon="icon_feed.png"
                       ContentTemplate="{DataTemplate views:RecipesPage}" />
-        <ShellContent Title="About"
-                      Icon="icon_about.png"
-                      ContentTemplate="{DataTemplate views:AboutPage}" />
     </TabBar>
 </Shell>
