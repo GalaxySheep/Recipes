@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using Recipes.Models;
 using Xamarin.Forms;
 
@@ -12,7 +11,7 @@ namespace Recipes.Views
         {
             set
             {
-                LoadNote(value);
+                LoadRecipe(value);
             }
         }
 
@@ -20,17 +19,17 @@ namespace Recipes.Views
         {
             InitializeComponent();
 
-            // Set the BindingContext of the page to a new Note.
+            // Set the BindingContext of the page to a new Recipe.
             BindingContext = new Recipe();
         }
 
-        async void LoadNote(string itemId)
+        async void LoadRecipe(string itemId)
         {
             try
             {
                 int id = Convert.ToInt32(itemId);
-                // Retrieve the note and set it as the BindingContext of the page.
-                Recipe recipe = await App.Database.GetNoteAsync(id);
+                // Retrieve the recipe and set it as the BindingContext of the page.
+                Recipe recipe = await App.Database.GetRecipeAsync(id);
                 BindingContext = recipe;
             }
             catch (Exception)
@@ -44,7 +43,7 @@ namespace Recipes.Views
             var recipe = (Recipe)BindingContext;
             if (!string.IsNullOrWhiteSpace(recipe.Text))
             {
-                await App.Database.SaveNoteAsync(recipe);
+                await App.Database.SaveRecipeAsync(recipe);
             }
 
             // Navigate backwards
@@ -54,7 +53,7 @@ namespace Recipes.Views
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             var recipe = (Recipe)BindingContext;
-            await App.Database.DeleteNoteAsync(recipe);
+            await App.Database.DeleteRecipeAsync(recipe);
 
             // Navigate backwards
             await Shell.Current.GoToAsync("..");

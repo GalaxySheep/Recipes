@@ -24,7 +24,7 @@
 
     <!-- Display a bottom tab bar containing two tabs -->
     <TabBar>
-        <ShellContent Title="Notes"
+        <ShellContent Title="Recipes"
                       Icon="icon_feed.png"
                       ContentTemplate="{DataTemplate views:RecipesPage}" />
         <ShellContent Title="About"

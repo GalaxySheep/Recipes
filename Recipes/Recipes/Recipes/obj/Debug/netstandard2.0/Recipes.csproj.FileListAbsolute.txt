@@ -2,6 +2,7 @@ C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\bin\Debug\netsta
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\bin\Debug\netstandard2.0\Recipes.dll
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\bin\Debug\netstandard2.0\ref\Recipes.dll
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\bin\Debug\netstandard2.0\Recipes.pdb
+C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\obj\Debug\netstandard2.0\Recipes.csproj.AssemblyReference.cache
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\obj\Debug\netstandard2.0\Recipes.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
@@ -15,4 +16,3 @@ C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\obj\Debug\netsta
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\obj\Debug\netstandard2.0\Recipes.dll
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\obj\Debug\netstandard2.0\ref\Recipes.dll
 C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\obj\Debug\netstandard2.0\Recipes.pdb
-C:\Users\MinyM\Documents\GitHub\Recipes\Recipes\Recipes\Recipes\obj\Debug\netstandard2.0\Recipes.csproj.AssemblyReference.cache

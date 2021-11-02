@@ -12,29 +12,31 @@
     </ContentPage.Resources>
 
     <!-- Layout children vertically -->
-    <StackLayout Margin="{StaticResource PageMargin}">
-        <Editor Placeholder="Enter recipe name"
+    <ScrollView>
+        <StackLayout Margin="{StaticResource PageMargin}">
+            <Editor Placeholder="Enter recipe name"
                 Text="{Binding Text}"
                 HeightRequest="50"
                 FontSize="Title"/>
-        <Editor Placeholder="Enter recipe creator"
+            <Editor Placeholder="Enter recipe creator"
                 Text="{Binding Creator}"
                 HeightRequest="50" />
-        <Label Text="Ingredients"/>
-        <Editor Placeholder="Enter recipe ingredients"
+            <Label Text="Ingredients"/>
+            <Editor Placeholder="Enter recipe ingredients"
                 Text="{Binding Ingredients}"
-                HeightRequest="150" />
-        <Label Text="Steps"/>
-        <Editor Placeholder="Enter recipe ingredients"
+                HeightRequest="140" />
+            <Label Text="Steps"/>
+            <Editor Placeholder="Enter recipe ingredients"
                 Text="{Binding Steps}"
-                HeightRequest="150" />
-        <Grid ColumnDefinitions="*,*">
-            <!-- Layout children in two columns -->
-            <Button Text="Save"
+                HeightRequest="140" />
+            <Grid ColumnDefinitions="*,*">
+                <!-- Layout children in two columns -->
+                <Button Text="Save"
                     Clicked="OnSaveButtonClicked" />
-            <Button Grid.Column="1"
+                <Button Grid.Column="1"
                     Text="Delete"
                     Clicked="OnDeleteButtonClicked"/>
-        </Grid>
-    </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

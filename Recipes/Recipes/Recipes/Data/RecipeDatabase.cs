@@ -2,7 +2,6 @@
 using Recipes.Models;
 using SQLite;
 using System.Threading.Tasks;
-using System;
 
 namespace Recipes.Data
 {
@@ -16,37 +15,37 @@ namespace Recipes.Data
             database.CreateTableAsync<Recipe>().Wait();
         }
 
-        public Task<List<Recipe>> GetNotesAsync()
+        public Task<List<Recipe>> GetRecipesAsync()
         {
             //Get all notes.
             return database.Table<Recipe>().ToListAsync();
         }
 
-        public Task<Recipe> GetNoteAsync(int id)
+        public Task<Recipe> GetRecipeAsync(int id)
         {
-            // Get a specific note.
+            // Get a specific recipe.
             return database.Table<Recipe>()
                             .Where(i => i.ID == id)
                             .FirstOrDefaultAsync();
         }
 
-        public Task<int> SaveNoteAsync(Recipe recipe)
+        public Task<int> SaveRecipeAsync(Recipe recipe)
         {
             if (recipe.ID != 0)
             {
-                // Update an existing note.
+                // Update an existing recipe.
                 return database.UpdateAsync(recipe);
             }
             else
             {
-                // Save a new note.
+                // Save a new recipe.
                 return database.InsertAsync(recipe);
             }
         }
 
-        public Task<int> DeleteNoteAsync(Recipe recipe)
+        public Task<int> DeleteRecipeAsync(Recipe recipe)
         {
-            // Delete a note.
+            // Delete a recipe.
             return database.DeleteAsync(recipe);
         }
     }

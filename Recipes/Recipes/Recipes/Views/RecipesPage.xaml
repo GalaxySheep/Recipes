@@ -35,17 +35,19 @@
                     SelectionChanged="OnSelectionChanged">
         <CollectionView.ItemsLayout>
             <LinearItemsLayout Orientation="Vertical"
-                               ItemSpacing="10" />
+                               ItemSpacing="0" />
         </CollectionView.ItemsLayout>
         <!-- Define the appearance of each item in the list -->
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <StackLayout>
                     <Label Text="{Binding Text}"
-                           FontSize="Medium" />
+                           TextColor="Black"
+                           FontSize="Medium"/>
                     <Label Text="{Binding Creator}"
-                           TextColor="{StaticResource TertiaryColor}"
-                           FontSize="Small" />
+                           TextColor="Gray"
+                           FontSize="Small"/>
+                    <BoxView HeightRequest="1" Color="#eaeaea"/>
                 </StackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>
