@@ -14,21 +14,25 @@
     <!-- Layout children vertically -->
     <ScrollView>
         <StackLayout Margin="{StaticResource PageMargin}">
-            <Editor Placeholder="Enter recipe name"
-                Text="{Binding Name}"
-                HeightRequest="50"
-                FontSize="Title"/>
-            <Editor Placeholder="Enter recipe creator"
-                Text="{Binding Creator}"
-                HeightRequest="50" />
-            <Label Text="Ingredients"/>
-            <Editor Placeholder="Enter recipe ingredients"
-                Text="{Binding Ingredients}"
-                HeightRequest="160" />
-            <Label Text="Steps"/>
-            <Editor Placeholder="Enter recipe ingredients"
-                Text="{Binding Steps}"
-                HeightRequest="180" />
+            <Editor Placeholder="Enter recipe name" PlaceholderColor="DarkGray"
+                    Text="{Binding Name}"
+                    HeightRequest="50"
+                    FontSize="Title"
+                    TextColor="Black" />
+            <Editor Placeholder="Enter recipe creator" PlaceholderColor="DarkGray"
+                    Text="{Binding Creator}"
+                    HeightRequest="50"
+                    TextColor="Black" />
+            <Label Text="Ingredients" TextColor="DarkGray"/>
+            <Editor Placeholder="Enter recipe ingredients" PlaceholderColor="DarkGray"
+                    Text="{Binding Ingredients}"
+                    HeightRequest="160"
+                    TextColor="Black" />
+            <Label Text="Steps" TextColor="DarkGray"/>
+            <Editor Placeholder="Enter recipe steps" PlaceholderColor="DarkGray"
+                    Text="{Binding Steps}"
+                    HeightRequest="180"
+                    TextColor="Black" />
             <Grid ColumnDefinitions="*,*">
                 <!-- Layout children in two columns -->
                 <Button Text="Save"
